@@ -29,8 +29,8 @@ dropLayer.draw();
 var images = {};
 var URLs = {
     house1: 'image/drag2.svg',
-    house2: 'https://dl.dropboxusercontent.com/u/139992952/stackoverflow/house204-4.jpg',
-    house3: 'https://dl.dropboxusercontent.com/u/139992952/stackoverflow/house204-1.jpg'
+    house2: 'image/blomma.svg',
+    house3: 'image/hjärta.svg'
 };
 loadImages(URLs, start);
 
