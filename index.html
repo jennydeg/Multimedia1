@@ -7,10 +7,17 @@
 <body>
 
 	<p>Be creative - make your own masterpiece:</p>
-	<canvas id="canvas" width="800" height="500"></canvas> 
-	<img id="drag2" class="drag" src="image/drag2.svg" draggable="true" ondragstart="drag(event)" class="image">
-	<img id="drag3" class="drag" src="image/drag3.svg" draggable="true" ondragstart="drag(event)" class="image">
+	<p>Click on image(s) to toggle selection</p>
+<p>Then click in the other canvas to drop</p>
+<p>You can drag to arrange images within a canvas</p>
+
+<div id="container2" class="left"></div>
+<div id="container1" class="left"></div>
+<div class="clear"></div>
+	<script src="kinetic-v4.5.5.js"></script>
+	<script src="kinetic-v4.5.5.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="kinetic.js"></script>
 </body>
 </html>

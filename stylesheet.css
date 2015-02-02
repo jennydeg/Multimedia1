@@ -3,16 +3,21 @@ html{
 *{
 
 }
-table{
-	background: url(image/bakground3.png);
-	background-size: cover;
-}
-td{
-	border: solid 1px #DDDDDD;
-	width: 80px;
-	height: 80px;
-}
+
 .image{
  	width: 250px;
  	height: 150px;
+}
+.left{
+	float:left;
+}
+.clear{
+	clear: both;
+	padding-bottom: 100px;
+}
+#container1{
+	margin-left: 60px;
+}
+#container2{
+	margin-left: 100px;
 }
