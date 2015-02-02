@@ -1,11 +1,25 @@
-document.onload = function(){
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Canvas Drag and Drop Test</title>
+</head>
+<body>
+<section>
 
-}
+<div>
+<canvas id="canvas" width="400" height="300">
+This text is displayed if your browser does not support HTML5 Canvas.
+</canvas>
+</div>
+
+<script type="text/javascript">
+
 var canvas;
 var ctx;
 var x = 75;
 var y = 50;
-var WIDTH = 100;
+var WIDTH = 400;
 var HEIGHT = 300;
 var dragok = false;
 
@@ -61,12 +75,8 @@ init();
 canvas.onmousedown = myDown;
 canvas.onmouseup = myUp;
 
-$(".drag").click(function(event){
-    var id = event.target.id;
-    c = document.getElementById("canvas");
-	context = c.getContext('2d');
-	base_image = new Image();
-  	base_image.src = 'image/'+id+".svg";
-  	context.drawImage(base_image, 0, 0);
-});
+</script>
 
+</section>
+</body>
+</html>
