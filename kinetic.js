@@ -1,9 +1,10 @@
+//source: http://jsfiddle.net/Zevan/QZejF/5/
 var highlightWidth = 2;
 
 var stage = new Kinetic.Stage({
     container: 'container1',
-    width: 300,
-    height: 300
+    width: 413,
+    height: 500
 });
 var layer = new Kinetic.Layer();
 stage.add(layer);
@@ -30,16 +31,20 @@ var images = {};
 var URLs = {
     house1: 'image/drag2.svg',
     house2: 'image/blomma.svg',
-    house3: 'image/hjärta.svg'
+    house3: 'image/heart.svg',
+    house4: 'image/sol.svg'
 };
 loadImages(URLs, start);
 
 
 function start() {
-    var house1 = kImage(images.house1, 10, 10, 50, 50, layer);
-    var house2 = kImage(images.house2, 75, 10, 50, 50, layer);
-    var house3 = kImage(images.house3, 140, 10, 50, 50, layer);
+    for (var i = 10; i >= 0; i--) {
+    var house1 = kImage(images.house1, 10, 10, 150, 100, layer);
+    var house2 = kImage(images.house2, 10, 120, 150, 100, layer);
+    var house3 = kImage(images.house3, 10, 190, 150, 100, layer);
+    var house4 = kImage(images.house4, 10, 240, 210, 120, layer);
     layer.draw();
+    };
 }
 
 function swapStagesIfSelected(sourceLayer, destinationLayer, startX, startY) {
@@ -88,8 +93,8 @@ function kImage(image, x, y, width, height, theLayer) {
         y: y,
         width: width,
         height: height,
-        //strokeWidth: 0.1,
-        //stroke: "green",
+        strokeWidth: 0.1,
+        stroke: "#FF7F00",
         draggable: true
     });
     image.myLayer = theLayer;
@@ -111,9 +116,9 @@ function addBackground(theStage, theLayer, otherLayer) {
         y: 0,
         width: theStage.getWidth(),
         height: theStage.getHeight(),
-        //fill: "white",
-        stroke: "green",
-        strokeWidth: 1
+        fill: "#FF7F00"
+        //stroke: "green",
+        //strokeWidth: 1
     });
     background.on("click", function () {
         var pos = theStage.getMousePosition();

@@ -1,23 +1,44 @@
 html{
 }
 *{
-
+	font-family: "Letter Gothic Std";
 }
-
+#header{
+	background: url(image/header.svg);
+	width: 600px;
+	height: 150px;
+	background-size: cover;
+	margin: 0 40px;
+}
 .image{
  	width: 250px;
  	height: 150px;
+}
+#soundcloud{
+	margin-left: 117px;
+	background: #FF7F00;
+	border-radius: 15px;
+	width: 400px;
+	padding: 10px;
 }
 .left{
 	float:left;
 }
 .clear{
 	clear: both;
-	padding-bottom: 100px;
+	padding-bottom: 20px;
 }
 #container1{
 	margin-left: 60px;
 }
 #container2{
-	margin-left: 100px;
+	margin-left: 40px;
+	border-radius: 15px;
+	overflow: scroll;
+}
+#moodform{
+	width: 190px;
+}
+.mood{
+	display: none;
 }

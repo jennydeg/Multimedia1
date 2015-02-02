@@ -5,11 +5,30 @@
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
-	<p>Be creative - make your own masterpiece:</p>
+	<div id="header" class="left"></div>
+	<!--<p>Be creative - make your own masterpiece:</p>
 	<p>Click on image(s) to toggle selection</p>
 <p>Then click in the other canvas to drop</p>
-<p>You can drag to arrange images within a canvas</p>
-
+<p>You can drag to arrange images within a canvas</p>-->
+<div id="soundcloud" class="left">
+	
+	<form id="moodform" class="left">
+		<p>What kind of mood are you in?</p>
+		<input type="radio" id="mood" name="mood" value="happy" onClick="showHappy()">Happy<br>
+		<input type="radio" id="mood" name="mood" value="sad" onClick="showSad()">Sad <br>
+		<input type="radio" id="mood" name="mood" value="love" onClick="showLove()">In love
+	</form>
+	<div id="sc-happy" class="mood left">
+		<iframe width="200px" height="5%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/77384678&amp;theme_color=#FFFFFF&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
+	</div>
+	<div id="sc-sad" class="mood">
+		<iframe width="200px" height="5%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/77385377&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
+	</div>
+	<div id="sc-love" class="mood">
+		<iframe width="200px" height="5%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/77385899&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
+	</div>
+</div>
+<div class="clear"></div>
 <div id="container2" class="left"></div>
 <div id="container1" class="left"></div>
 <div class="clear"></div>
