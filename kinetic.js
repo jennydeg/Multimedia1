@@ -31,17 +31,22 @@
       	pug: 'image/drag2.svg',
     	flower: 'image/blomma.svg',
 		heart: 'image/heart.svg',
-    	hamster: 'image/sol.svg'
+    	sol: 'image/sol.svg',
+		//star: 'image/star.svg'
     };
     loadImages(URLs,start);
 
 
     function start(){
-        var pug=kImage(images.pug,10,10,150,150,layer);
-        var flower=kImage(images.flower,105,10,150,150,layer);
-        var heart=kImage(images.heart,140,10,50,50,layer);
-		var hamster=kImage(images.hamster,140,10,50,50,layer);
-        layer.draw();
+		for(var i=0; i<10; i++)
+		{
+        	var pug=kImage(images.pug,40,10,150,150,layer);
+        	var flower=kImage(images.flower,225,10,150,150,layer);
+        	var heart=kImage(images.heart,40,170,150,150,layer);
+			var sol=kImage(images.sol,225,170,150,150,layer);
+			//var star = kImage(images.sol,140,10,50,50,layer);
+        	layer.draw();
+		}
     }
 
 
@@ -93,7 +98,7 @@
             width:width,
             height:height,
             strokeWidth:0.1,
-            stroke:"green",
+            stroke:"orange",
             draggable:true
         });
         image.myLayer=theLayer;
@@ -153,6 +158,7 @@
                 element.setStrokeWidth(setStrokeWidth);
         }else{
             if(element.getStrokeWidth()>5){
+				element.setStroke("transparent");
                 element.setStrokeWidth(0.1);
                 element.isSelected=false;
             }else{
