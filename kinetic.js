@@ -1,4 +1,4 @@
- var highlightWidth=8;
+var highlightWidth=8;
 
     var stage = new Kinetic.Stage({
         container: 'container1',
@@ -20,6 +20,55 @@
 
     // these must go after the creation of stages & layers
     addBackground(stage,layer,dropLayer);
+
+http://jsfiddle.net/m1erickson/bSpBF/
+var highlightWidth = 2;
+
+var stage = new Kinetic.Stage({
+    container: 'container1',
+    width: 413,
+    height: 500
+});
+var layer = new Kinetic.Layer();
+stage.add(layer);
+
+
+var dropzone = new Kinetic.Stage({
+    container: 'container2',
+    width: 700,
+    height: 300
+});
+var dropLayer = new Kinetic.Layer();
+dropzone.add(dropLayer);
+
+
+// these must go after the creation of stages & layers
+addBackground(stage, layer, dropLayer);
+layer.draw();
+addBackground(dropzone, dropLayer, layer);
+dropLayer.draw();
+
+
+// get images & then trigger start()
+var images = {};
+var URLs = {
+    house1: 'image/drag2.svg',
+    house2: 'image/blomma.svg',
+    house3: 'image/heart.svg',
+    house4: 'image/sol.svg'
+    
+};
+loadImages(URLs, start);
+
+
+function start() {
+    for (var i = 10; i >= 0; i--) {
+    var house1 = kImage(images.house1, 10, 10, 150, 100, layer);
+    var house2 = kImage(images.house2, 10, 120, 150, 100, layer);
+    var house3 = kImage(images.house3, 10, 190, 150, 100, layer);
+    var house4 = kImage(images.house4, 10, 240, 210, 120, layer);
+    
+
     layer.draw();
     addBackground(dropzone,dropLayer,layer);
     dropLayer.draw();
@@ -84,6 +133,7 @@
     }
 
 
+
     // build the specified KineticJS Image and add it to the specified layer
     function kImage(image,x,y,width,height,theLayer){
         var image=new Kinetic.Image({
@@ -105,6 +155,62 @@
         image.myLayer.add(image);
         return(image);
     }
+
+
+    sourceLayer.draw();
+    destinationLayer.draw();
+}
+
+// build the specified KineticJS Image and add it to the specified layer
+function kImage(image, x, y, width, height, theLayer) {
+    var image = new Kinetic.Image({
+        image: image,
+        x: x,
+        y: y,
+        width: width,
+        height: height,
+        strokeWidth: 0.1,
+        stroke: "transparent",
+        draggable: true
+    });
+    image.myLayer = theLayer;
+    image.isSelected = false;
+    image.on("click", function () {
+        highlight(this);
+        this.myLayer.draw();
+    });
+    image.myLayer.add(image);
+    return (image);
+}
+
+
+// build a background image and add it to the specified stage
+function addBackground(theStage, theLayer, otherLayer) {
+
+
+    var background = new Kinetic.Rect({
+        x: 0,
+        y: 0,
+        width: theStage.getWidth(),
+        height: theStage.getHeight(),
+        fill: "#FF7F00"
+        //stroke: "green",
+        //strokeWidth: 1
+    });
+    background.on("click", function () {
+        var pos = theStage.getMousePosition();
+        var mouseX = parseInt(pos.x);
+        var mouseY = parseInt(pos.y);
+        swapStagesIfSelected(otherLayer, theLayer, mouseX, mouseY);
+    });
+    theLayer.add(background);
+}
+
+
+
+
+
+/////////////  Image loader
 
 
     // build a background image and add it to the specified stage
