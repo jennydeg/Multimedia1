@@ -1,6 +1,7 @@
 html{
 }
 *{
+<<<<<<< Updated upstream
 	font-family: "Letter Gothic Std";
 }
 #header{
@@ -41,4 +42,28 @@ html{
 }
 .mood{
 	display: none;
+=======
+
+}
+table{
+	border: solid 1px black;
+
+}
+td{
+	border: solid 1px black;
+	width: 80px;
+	height: 80px;
+}
+#div1 {
+	width:350px;
+	height:70px;
+	padding:10px;
+	border:1px solid #aaaaaa;
+}
+#div2 {
+	width:350px;
+	height:70px;
+	padding:10px;
+	border:1px solid #aaaaaa;
+>>>>>>> Stashed changes
 }

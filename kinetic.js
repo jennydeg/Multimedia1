@@ -1,9 +1,9 @@
- var highlightWidth=8;
+var highlightWidth=8;
 
     var stage = new Kinetic.Stage({
         container: 'container1',
         width: 413,
-    	height: 500
+        height: 500
     });
     var layer = new Kinetic.Layer();
     stage.add(layer);
@@ -12,7 +12,7 @@
     var dropzone = new Kinetic.Stage({
         container: 'container2',
         width: 700,
-    	height: 300
+        height: 300
     });
     var dropLayer = new Kinetic.Layer();
     dropzone.add(dropLayer);
@@ -28,16 +28,24 @@
     // get images & then trigger start()
     var images={};
     var URLs = {
+<<<<<<< HEAD
       	pug: 'image/drag2.svg',
     	flower: 'image/blomma.svg',
 		heart: 'image/heart.svg',
     	sol: 'image/sol.svg',
 		//star: 'image/star.svg'
+=======
+        pug: 'image/drag2.svg',
+        flower: 'image/blomma.svg',
+        heart: 'image/heart.svg',
+        hamster: 'image/sol.svg'
+>>>>>>> FETCH_HEAD
     };
     loadImages(URLs,start);
 
 
     function start(){
+<<<<<<< HEAD
 		for(var i=0; i<10; i++)
 		{
         	var pug=kImage(images.pug,40,10,150,150,layer);
@@ -47,6 +55,13 @@
 			//var star = kImage(images.sol,140,10,50,50,layer);
         	layer.draw();
 		}
+=======
+        var pug=kImage(images.pug,10,10,150,150,layer);
+        var flower=kImage(images.flower,105,10,150,150,layer);
+        var heart=kImage(images.heart,140,10,50,50,layer);
+        var hamster=kImage(images.hamster,140,10,50,50,layer);
+        layer.draw();
+>>>>>>> FETCH_HEAD
     }
 
 
@@ -167,4 +182,3 @@
             }
         }
     }
-
