@@ -26,5 +26,6 @@ function showLove()
 $( document ).ready(function() {
 	$("#clickinfo").click(function(){
 		$( "#info" ).fadeToggle();
+		$( "#clickinfo" ).css();
 	});
 });

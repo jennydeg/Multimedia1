@@ -18,9 +18,9 @@ html{
 }
 #info{
 	position: absolute;
-	width: 500px;
+	width: 400px;
 	height: 600px;
-	margin-left: 330px;
+	margin-left: 430px;
 	background-color: rgba(255, 255, 255, 0.94);
 	border: solid 1px grey;
 	z-index: 101;
