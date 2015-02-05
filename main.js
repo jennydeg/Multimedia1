@@ -26,6 +26,12 @@ function showLove()
 $( document ).ready(function() {
 	$("#clickinfo").click(function(){
 		$( "#info" ).fadeToggle();
-		$( "#clickinfo" ).css();
+		var isVisible = $( "#info" ).is( ":visible" );
+		var isHidden = $( "#info" ).is( ":hidden" );
+		if(isVisible === true)
+			$("#infoimg").css("background", "#FF7F00");
+		if(isHidden == true)
+			$("#infoimg").css("background", "#bfbebc");
 	});
+	
 });
