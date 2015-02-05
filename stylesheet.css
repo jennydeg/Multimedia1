@@ -1,19 +1,29 @@
 html{
 }
 *{
-<<<<<<< Updated upstream
 	font-family: "Letter Gothic Std";
+}
+#container{
+	width: 1250px;
+}
+#containers{
+	margin-top: 20px;
 }
 #header{
 	background: url(image/header.svg);
 	width: 600px;
 	height: 150px;
 	background-size: cover;
-	margin: 0 40px;
+	margin: 10px 40px;
 }
-.image{
- 	width: 250px;
- 	height: 150px;
+#info{
+	position: absolute;
+	width: 500px;
+	height: 600px;
+	margin-left: 330px;
+	background-color: rgba(255, 255, 255, 0.94);
+	border: solid 1px grey;
+	z-index: 101;
 }
 #soundcloud{
 	margin-left: 117px;
@@ -21,6 +31,10 @@ html{
 	border-radius: 15px;
 	width: 400px;
 	padding: 10px;
+	margin-top: 10px;
+}
+.hide{
+	display: none;
 }
 .left{
 	float:left;
@@ -42,8 +56,6 @@ html{
 }
 .mood{
 	display: none;
-=======
-
 }
 table{
 	border: solid 1px black;
@@ -65,5 +77,20 @@ td{
 	height:70px;
 	padding:10px;
 	border:1px solid #aaaaaa;
->>>>>>> Stashed changes
+}
+#clickinfo{
+	padding-right: 40px;
+	cursor: pointer;
+	color: white;
+	text-align: center;
+}
+#infoimg{
+	float: right;
+	border-radius: 50%;
+	padding: 5px;
+	width: 20px;
+	background: rgba(159, 155, 152, 0.64);
+}
+#infoimg:hover{
+	background: #FF7F00;
 }

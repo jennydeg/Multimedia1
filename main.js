@@ -23,3 +23,8 @@ function showLove()
     document.getElementById("sc-happy").style.display="none";    
 
 }
+$( document ).ready(function() {
+	$("#clickinfo").click(function(){
+		$( "#info" ).fadeToggle();
+	});
+});
