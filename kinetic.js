@@ -3,7 +3,7 @@ var highlightWidth=8;
     var stage = new Kinetic.Stage({
         container: 'container1',
         width: 413,
-        height: 500
+        height: 600
     });
     var layer = new Kinetic.Layer();
     stage.add(layer);
@@ -32,7 +32,9 @@ var highlightWidth=8;
     	flower: 'image/blomma.svg',
 		heart: 'image/heart.svg',
     	sol: 'image/sol.svg',
-		//star: 'image/star.svg'
+        moln: 'image/moln.svg',
+        hus: 'image/hus.svg',
+		star: 'image/star.svg'
     };
     loadImages(URLs,start);
 
@@ -44,7 +46,9 @@ var highlightWidth=8;
         	var flower=kImage(images.flower,225,10,150,150,layer);
         	var heart=kImage(images.heart,40,170,150,150,layer);
 			var sol=kImage(images.sol,225,170,150,150,layer);
-			//var star = kImage(images.sol,140,10,50,50,layer);
+            var moln=kImage(images.moln,40,330,150,130,layer);
+            var hus=kImage(images.hus,220,330,160,130,layer);
+			var star = kImage(images.star,40,470,150,110,layer);
         	layer.draw();
 		}
     }
