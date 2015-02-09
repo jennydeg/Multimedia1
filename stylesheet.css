@@ -65,6 +65,14 @@ html{
 	background: #FF7F00;
 }
 .dragImg{
+	width: 100px;
+	height: 100px;
+}
+#images{
 	width: 300px;
-	height: 300px;
+	float: right;
+}
+.background{
+	width: 100px;
+	height: 100px;
 }
