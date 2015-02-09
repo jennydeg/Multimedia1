@@ -50,8 +50,8 @@ $(document).ready(function() {
 
     stage = new Kinetic.Stage({
         container: 'container',
-        width: 800,
-        height: 600,
+        width: 750,
+        height: 500,
       });
 });
 

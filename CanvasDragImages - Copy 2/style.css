@@ -12,7 +12,9 @@ img{
 	width:100px;
 	height:100px;
 }
-
+#bgContainer{
+	border: solid 1px black;
+}
 *{
 	font-family: "Letter Gothic Std";
 }
@@ -28,11 +30,12 @@ img{
 	width: 400px;
 	height: 600px;
 	margin-left: 330px;
+	margin-top: 50px;
 	z-index: 101;
 }
 #infoillustrator{
 	width: 600px;
-	height: 400px;
+	height: 450px;
 }
 #soundcloud{
 	margin-left: 117px;
@@ -75,4 +78,6 @@ img{
 #infoimg:hover{
 	background: #FF7F00;
 }
-#toolbox{}
+#toolbox{
+	width: 300px;
+}
