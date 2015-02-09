@@ -3,7 +3,7 @@ var highlightWidth=8;
     var stage = new Kinetic.Stage({
         container: 'container1',
         width: 413,
-        height: 600
+        height: 800
     });
     var layer = new Kinetic.Layer();
     stage.add(layer);
@@ -34,13 +34,15 @@ var highlightWidth=8;
     	sol: 'image/sol.svg',
         moln: 'image/moln.svg',
         hus: 'image/hus.svg',
-		star: 'image/star.svg'
+		star: 'image/star.svg',
+        grass: 'image/grass.svg',
+        katt1: 'image/katt1.svg'
     };
     loadImages(URLs,start);
 
 
     function start(){
-		for(var i=0; i<10; i++)
+		for(var i=0; i<11; i++)
 		{
         	var pug=kImage(images.pug,40,10,150,150,layer);
         	var flower=kImage(images.flower,225,10,150,150,layer);
@@ -49,6 +51,8 @@ var highlightWidth=8;
             var moln=kImage(images.moln,40,330,150,130,layer);
             var hus=kImage(images.hus,220,330,160,130,layer);
 			var star = kImage(images.star,40,470,150,110,layer);
+            var grass = kImage(images.grass,230,470,150,110,layer);
+            var katt1 = kImage(images.katt1,40,600,150,110,layer);
         	layer.draw();
 		}
     }
