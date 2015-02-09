@@ -27,10 +27,12 @@ img{
 	position: absolute;
 	width: 400px;
 	height: 600px;
-	margin-left: 430px;
-	background-color: rgba(255, 255, 255, 0.94);
-	border: solid 1px grey;
+	margin-left: 330px;
 	z-index: 101;
+}
+#infoillustrator{
+	width: 600px;
+	height: 400px;
 }
 #soundcloud{
 	margin-left: 117px;
@@ -73,3 +75,4 @@ img{
 #infoimg:hover{
 	background: #FF7F00;
 }
+#toolbox{}
