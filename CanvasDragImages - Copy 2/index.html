@@ -6,12 +6,53 @@
 	<meta charset="UTF-8">
 </head>
 <body>
+			<div id="info" class="hide">
+			<img id="infoillustrator" src="image/howto.jpg" alt="infobox">
+		</div>
+		
+		<div id="clickinfo">
+			<div id="infoimg">i</div>
+		</div>
+		
+		<div id="header" class="left">
+		</div>
+		<div id="soundcloud" class="left">
+	
+			<form id="moodform" class="left">
+				<p>What kind of mood are you in?</p>
+				<input type="radio" id="mood" name="mood" value="happy" onClick="showHappy()">Happy<br>
+				<input type="radio" id="mood" name="mood" value="sad" onClick="showSad()">Sad <br>
+				<input type="radio" id="mood" name="mood" value="love" onClick="showLove()">In love
+			</form>
+		
+			<div id="sc-happy" class="mood left">
+				<iframe width="200px" height="5%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/77384678&amp;theme_color=#FFFFFF&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
+			</div>
+			<div id="sc-sad" class="mood">
+				<iframe width="200px" height="5%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/77385377&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
+			</div>
+			<div id="sc-love" class="mood">
+				<iframe width="200px" height="5%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/77385899&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
+			</div>
+		
+		</div>
 	<div id="container"></div>
 	<div id="bgContainer">
 		<img class="bgthumbnail" src="http://upload.wikimedia.org/wikipedia/commons/b/b3/Pieter_Both,_mountain.jpg"/>
+		<img class="bgthumbnail" src="image/bakgrund1.svg">
+				<img class="bgthumbnail" id="back2" src="image/bakgrund2.svg">
+				<img class="bgthumbnail" id="back2" src="image/bakgrund3.svg">
 	</div>
 	<div id="objContainer">
-	<img class="objthumbnail" src="http://icons.iconarchive.com/icons/iconka/meow/256/cat-walk-icon.png"/>	
+	<img class="objthumbnail" src="http://icons.iconarchive.com/icons/iconka/meow/256/cat-walk-icon.png"/>
+	<img class="objthumbnail" id="flower" src="image/blomma.svg">
+					<img class="objthumbnail" id="pug" src="image/drag2.svg">
+					<img class="objthumbnail" id="heart" src="image/heart.svg">
+					<img class="objthumbnail" id="house" src="image/hus.svg">
+					<img class="objthumbnail" id="crucifix" src="image/kors.svg">
+					<img class="objthumbnail" id="cloud" src="image/moln.svg">
+					<img class="objthumbnail" id="sun" src="image/sol.svg">
+					<img class="objthumbnail" id="star" src="image/star.svg">	
 	</div>
 	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/kineticjs/5.2.0/kinetic.js"></script>
