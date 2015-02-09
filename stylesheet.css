@@ -6,9 +6,6 @@ html{
 #container{
 	width: 1250px;
 }
-#containers{
-	margin-top: 20px;
-}
 #header{
 	background: url(image/header.svg);
 	width: 600px;
@@ -28,6 +25,7 @@ html{
 #soundcloud{
 	margin-left: 117px;
 	background: #FF7F00;
+	color: white;
 	border-radius: 15px;
 	width: 400px;
 	padding: 10px;
@@ -43,40 +41,12 @@ html{
 	clear: both;
 	padding-bottom: 20px;
 }
-#container1{
-	margin-left: 60px;
-}
-#container2{
-	margin-left: 40px;
-	border-radius: 15px;
-	overflow: scroll;
-}
+
 #moodform{
 	width: 190px;
 }
 .mood{
 	display: none;
-}
-table{
-	border: solid 1px black;
-
-}
-td{
-	border: solid 1px black;
-	width: 80px;
-	height: 80px;
-}
-#div1 {
-	width:350px;
-	height:70px;
-	padding:10px;
-	border:1px solid #aaaaaa;
-}
-#div2 {
-	width:350px;
-	height:70px;
-	padding:10px;
-	border:1px solid #aaaaaa;
 }
 #clickinfo{
 	padding-right: 40px;
@@ -89,8 +59,12 @@ td{
 	border-radius: 50%;
 	padding: 5px;
 	width: 20px;
-	background: rgba(159, 155, 152, 0.64);
+	background: #bfbebc;
 }
 #infoimg:hover{
 	background: #FF7F00;
+}
+.dragImg{
+	width: 300px;
+	height: 300px;
 }

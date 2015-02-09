@@ -6,46 +6,56 @@
 </head>
 <body>
 	<div id="container">
-	<div id="info" class="hide">
-		<img id="infoillustrator" src="image/howto.jpg" alt="infobox">
-	</div>
-		<div id="clickinfo"><div id="infoimg">i</div></div>
-	<div id="header" class="left"></div>
-	<!--<p>Be creative - make your own masterpiece:</p>
-	<p>Click on image(s) to toggle selection</p>
-<p>Then click in the other canvas to drop</p>
-<p>You can drag to arrange images within a canvas</p>-->
-<div id="soundcloud" class="left">
+		
+		<div id="info" class="hide">
+			<img id="infoillustrator" src="image/howto.jpg" alt="infobox">
+		</div>
+		
+		<div id="clickinfo">
+			<div id="infoimg">i</div>
+		</div>
+		
+		<div id="header" class="left">
+		</div>
+		<div id="soundcloud" class="left">
 	
-	<form id="moodform" class="left">
-		<p>What kind of mood are you in?</p>
-		<input type="radio" id="mood" name="mood" value="happy" onClick="showHappy()">Happy<br>
-		<input type="radio" id="mood" name="mood" value="sad" onClick="showSad()">Sad <br>
-		<input type="radio" id="mood" name="mood" value="love" onClick="showLove()">In love
-	</form>
-	<div id="sc-happy" class="mood left">
-		<iframe width="200px" height="5%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/77384678&amp;theme_color=#FFFFFF&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
+			<form id="moodform" class="left">
+				<p>What kind of mood are you in?</p>
+				<input type="radio" id="mood" name="mood" value="happy" onClick="showHappy()">Happy<br>
+				<input type="radio" id="mood" name="mood" value="sad" onClick="showSad()">Sad <br>
+				<input type="radio" id="mood" name="mood" value="love" onClick="showLove()">In love
+			</form>
+		
+			<div id="sc-happy" class="mood left">
+				<iframe width="200px" height="5%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/77384678&amp;theme_color=#FFFFFF&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
+			</div>
+			<div id="sc-sad" class="mood">
+				<iframe width="200px" height="5%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/77385377&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
+			</div>
+			<div id="sc-love" class="mood">
+				<iframe width="200px" height="5%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/77385899&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
+			</div>
+		
+		</div>
+			<div id="images">
+				<img class="dragImg" id="flower" src="image/blomma.svg">
+				<img class="dragImg" id="pug" src="image/drag2.svg">
+				<img class="dragImg" id="heart" src="image/heart.svg">
+				<img class="dragImg" id="house" src="image/hus.svg">
+				<img class="dragImg" id="crucifix" src="image/kors.svg">
+				<img class="dragImg" id="cloud" src="image/moln.svg">
+				<img class="dragImg" id="sun" src="image/sol.svg">
+				<img class="dragImg" id="star" src="image/star.svg">
+			</div>
+			<div id="canvas">
+			</div>
 	</div>
-	<div id="sc-sad" class="mood">
-		<iframe width="200px" height="5%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/77385377&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
-	</div>
-	<div id="sc-love" class="mood">
-		<iframe width="200px" height="5%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/77385899&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
-	</div>
-</div>
-			<div class="clear"></div>
-<div id="containers">
-	<div id="container2" class="left"></div>
-	<div id="container1" class="left"></div>
-	<div class="clear"></div>
-</div>
-
-	</div>
-	<script src="kinetic-v4.5.5.js"></script>
-	<script src="kinetic-v4.5.5.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/kineticjs/5.2.0/kinetic.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 	<script type="text/javascript" src="kinetic.js"></script>
+	
 </body>
 </html>
 
