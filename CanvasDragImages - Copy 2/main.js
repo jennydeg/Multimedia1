@@ -1,5 +1,7 @@
 $(document).ready(function() {
-
+  $("#clickinfo").click(function(){
+      $( "#info" ).fadeToggle();
+  });
     $(".bgthumbnail").click(function(){
         var myImage = new Image($(this).attr("width"), $(this).attr("height"));
         myImage.src = $(this).attr("src");
