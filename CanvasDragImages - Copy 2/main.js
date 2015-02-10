@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	$("#clickinfo").click(function(){
+	$("#clickinfo, #ok").click(function(){
       $( "#info" ).fadeToggle();
 	});
     
@@ -64,8 +64,10 @@ $(document).ready(function() {
 	
 	$("#done").click(function() {
 		$('#content').hide();
+		$('#done').appendTo('body').html('Save your awesome art and click <a href=file:///Users/Jenny/GitHub/Multimedia/CanvasDragImages%20-%20Copy%202/index.html> here</a> to keep on creating!');
 		$('#container').appendTo('body');
     	$('#container').addClass('animate');
+		
 	});
 });
 

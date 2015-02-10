@@ -9,7 +9,7 @@ img{
 }
 .animate{
 	position: absolute;
-	-webkit-animation: moves 4s linear;	
+	-webkit-animation: moves 2s linear;	
 }
 #objContainer{
 	width: 430px;
@@ -87,6 +87,11 @@ img{
 #infoimg:hover{
 	background: #FF7F00;
 }
+#ok{
+	margin-left: 310px;
+	margin-top: -20px;
+	cursor: pointer;
+}
 #toolbox{
 	width: 300px;
 }
@@ -94,6 +99,10 @@ button{
 	background: white;
 	padding: 4px;
 	cursor: pointer;
+	border: solid 1px #d1c8c8;
+}
+button:hover{
+	background: #FF7F00;
 }
 
 @-webkit-keyframes moves{
