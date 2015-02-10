@@ -1,8 +1,10 @@
 $(document).ready(function() {
-  $("#clickinfo").click(function(){
+	var array = "";
+	$("#clickinfo").click(function(){
       $( "#info" ).fadeToggle();
-  });
-    $(".bgthumbnail").click(function(){
+	});
+    
+	$(".bgthumbnail").click(function(){
         var myImage = new Image($(this).attr("width"), $(this).attr("height"));
         myImage.src = $(this).attr("src");
 
@@ -45,7 +47,8 @@ $(document).ready(function() {
       });
       layer.add(imgobj);
       stage.add(layer);
-
+	
+		array += $(this).attr('id') + " ";
     });
 
     stage = new Kinetic.Stage({
@@ -53,7 +56,17 @@ $(document).ready(function() {
         width: 750,
         height: 500,
       });
+
+	$("input:radio[name=mood]").click(function() {
+    	var value = $(this).val();
+		$('.mood').hide();
+		$('#'+value).show();
+	});
+	
+	$("#done").click(function() {
+		$('#content').hide();
+		$('#container').appendTo('body');
+    	$('#container').addClass('animate');
+	});
 });
-
-
 

@@ -3,7 +3,19 @@ img{
     height: 100px;
     border: 0;
 }
-
+#container{
+	width: 750px;
+	border: solid 4px #FF7F00;
+}
+.animate{
+	position: absolute;
+	-webkit-animation: moves 4s linear;	
+}
+#objContainer{
+	width: 430px;
+	margin-top: -160px;
+	margin-left: 20px;
+}
 .objthumbnail {
 	width:100px;
 	height:100px;
@@ -11,9 +23,6 @@ img{
 .bgthumbnail {
 	width:100px;
 	height:100px;
-}
-#bgContainer{
-	border: solid 1px black;
 }
 *{
 	font-family: "Letter Gothic Std";
@@ -38,7 +47,7 @@ img{
 	height: 450px;
 }
 #soundcloud{
-	margin-left: 117px;
+	margin-left: 100px;
 	background: #FF7F00;
 	color: white;
 	border-radius: 15px;
@@ -80,4 +89,17 @@ img{
 }
 #toolbox{
 	width: 300px;
+}
+button{
+	background: white;
+	padding: 4px;
+	cursor: pointer;
+}
+
+@-webkit-keyframes moves{
+	0%{top: 0px; left: 0%;}
+	25%{top: 0px; left: 40%;}
+	50%{top: 200px; left: 40%;}
+	75%{ top: 200px; left: 0%}
+	100%{top: 0px; left: 0%;}
 }

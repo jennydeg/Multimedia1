@@ -6,7 +6,8 @@
 	<meta charset="UTF-8">
 </head>
 <body>
-			<div id="info" class="hide">
+	<div id="content">
+		<div id="info" class="hide">
 			<img id="infoillustrator" src="image/howto.jpg" alt="infobox">
 		</div>
 		
@@ -20,45 +21,62 @@
 	
 			<form id="moodform" class="left">
 				<p>What kind of mood are you in?</p>
-				<input type="radio" id="mood" name="mood" value="happy" onClick="showHappy()">Happy<br>
-				<input type="radio" id="mood" name="mood" value="sad" onClick="showSad()">Sad <br>
-				<input type="radio" id="mood" name="mood" value="love" onClick="showLove()">In love
+				<input type="radio" id="mood" name="mood" value="happy">Happy<br>
+				<input type="radio" id="mood" name="mood" value="sad">Sad <br>
+				<input type="radio" id="mood" name="mood" value="love">In love
 			</form>
 		
-			<div id="sc-happy" class="mood left">
-				<iframe width="200px" height="5%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/77384678&amp;theme_color=#FFFFFF&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
+			<div id="happy" class="mood">
+				<iframe width="200px" height="5%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/77384678&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
 			</div>
-			<div id="sc-sad" class="mood">
+			<div id="sad" class="mood">
 				<iframe width="200px" height="5%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/77385377&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
 			</div>
-			<div id="sc-love" class="mood">
+			<div id="love" class="mood">
 				<iframe width="200px" height="5%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/77385899&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
 			</div>
 		
 		</div>
-	<div id="container"></div>
-	<div id="bgContainer">
+
+	<div id="bgContainer" class="clear">
+		<p>1. Choose background</p>
 				<img class="bgthumbnail" src="image/Landscape_01.jpg">
 				<img class="bgthumbnail" src="image/bakgrund1.png">
 				<img class="bgthumbnail" id="back2" src="image/bakgrund2.png">
 				<img class="bgthumbnail" id="back2" src="image/bakgrund3.png">
+				<img class="bgthumbnail" id="back2" src="image/bakgrund4.png">
 	</div>
-	<div id="objContainer">
-					<img class="objthumbnail" id="star" src="image/kattfan.png">
-					<img class="objthumbnail" id="flower" src="image/blomma.svg">
-					<img class="objthumbnail" id="pug" src="image/drag2.svg">
-					<img class="objthumbnail" id="heart" src="image/heart.svg">
-					<img class="objthumbnail" id="house" src="image/hus.svg">
-					<img class="objthumbnail" id="crucifix" src="image/kors.svg">
-					<img class="objthumbnail" id="cloud" src="image/moln.svg">
-					<img class="objthumbnail" id="sun" src="image/sol.svg">
-					<img class="objthumbnail" id="star" src="image/star.svg">
-					<img class="objthumbnail" id="star" src="image/katt.png">	
-					<img class="objthumbnail" id="star" src="image/katten3.png">
-					<img class="objthumbnail" id="star" src="image/ananas.png">		
-					<img class="objthumbnail" id="star" src="image/hat.jpg">	
-
+	<div id="container" class="left"></div>
+	<div id="objContainer" class="left">
+		<div id="decoContainer">
+			<p>2. Decorate the background</p>
+			<img class="objthumbnail deco" id="flower" src="image/blomma.svg">
+			<img class="objthumbnail deco" id="house" src="image/hus.svg">
+			<img class="objthumbnail deco" id="crucifix" src="image/kors.svg">
+			<img class="objthumbnail deco" id="cloud" src="image/moln.svg">
+			<img class="objthumbnail deco" id="sun" src="image/sol.svg">
+			<img class="objthumbnail deco" id="star" src="image/star.svg">
+			
+		</div>
+		<div id="figureContainer">
+			<p>3. Pick one (or a bunch!) of these cuties</p>
+			<img class="objthumbnail figure" id="pug" src="image/drag2.svg">
+			<img class="objthumbnail figure" id="cat" src="image/katt.png">	
+			<img class="objthumbnail figure" id="cat2" src="image/katten3.png">
+			<img class="objthumbnail figure" id="star" src="image/kattfan.png">
+		</div>
+		<div id="extraContainer">
+			<p>4. Pimp your picture with some accessories</p>
+			<img class="objthumbnail extra" id="heart" src="image/heart.svg">
+			<img class="objthumbnail extra" id="pineapple" src="image/ananas.png">		
+			<img class="objthumbnail extra" id="hat" src="image/hat.jpg">	
+			<img class="objthumbnail extra" id="glasses" src="image/glasses.png">
+			<img class="objthumbnail extra" id="icecream" src="image/icecream.png">
+			<img class="objthumbnail deco" id="baloon" src="image/balloon.png">
+		</div>
+		<div id="done">5. <button id="done"><h2>DONE!</h2></button></div>
 	</div>
+</div>
 	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/kineticjs/5.2.0/kinetic.js"></script>
 	    <script src="jquery-ui.min.js"></script>
