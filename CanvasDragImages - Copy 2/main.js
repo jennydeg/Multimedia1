@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	var array = "";
+
 	$("#clickinfo").click(function(){
       $( "#info" ).fadeToggle();
 	});
@@ -47,8 +47,7 @@ $(document).ready(function() {
       });
       layer.add(imgobj);
       stage.add(layer);
-	
-		array += $(this).attr('id') + " ";
+
     });
 
     stage = new Kinetic.Stage({
