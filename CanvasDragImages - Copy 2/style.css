@@ -1,15 +1,15 @@
-img{
-    width: 100px;
-    height: 100px;
-    border: 0;
+#content{
+	width: 1280px;
+	padding-bottom: 100px;
 }
 #container{
 	width: 750px;
 	border: solid 4px #FF7F00;
 }
-.animate{
-	position: absolute;
-	-webkit-animation: moves 2s linear;	
+img{
+    width: 100px;
+    height: 100px;
+    border: 0;
 }
 #objContainer{
 	width: 430px;
@@ -32,7 +32,6 @@ img{
 	width: 600px;
 	height: 150px;
 	background-size: cover;
-	margin: 10px 40px;
 }
 #info{
 	position: absolute;
@@ -47,11 +46,11 @@ img{
 	height: 450px;
 }
 #soundcloud{
-	margin-left: 100px;
-	background: #FF7F00;
+	margin-left: 170px;
+	background: rgba(255, 59, 0, 0.89);
 	color: white;
 	border-radius: 15px;
-	width: 400px;
+	width: 410px;
 	padding: 10px;
 	margin-top: 10px;
 }
@@ -66,7 +65,7 @@ img{
 	float:left;
 }
 #moodform{
-	width: 190px;
+	width: 200px;
 }
 .mood{
 	display: none;
@@ -103,12 +102,39 @@ button{
 }
 button:hover{
 	background: #FF7F00;
+	color: white;
+}
+#new{
+	position: absolute;
+	top: 850px;
+	left: 555px
+}
+.animate{
+	-webkit-animation: rotateIn 3s linear;
+}
+.animateButton{
+	-webkit-animation:  glowing 1s infinite;
 }
 
-@-webkit-keyframes moves{
-	0%{top: 0px; left: 0%;}
-	25%{top: 0px; left: 40%;}
-	50%{top: 200px; left: 40%;}
-	75%{ top: 200px; left: 0%}
-	100%{top: 0px; left: 0%;}
+/*Animations: */
+@-webkit-keyframes rotateIn {
+  0% {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+            transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes glowing {
+  0% { background-color: white;}
+  50% { background-color: #FF7F00; color: white;}
+  100% { background-color: white;}
 }

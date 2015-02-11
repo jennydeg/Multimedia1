@@ -63,11 +63,16 @@ $(document).ready(function() {
 	});
 	
 	$("#done").click(function() {
-		$('#content').hide();
-		$('#done').appendTo('body').html('Save your awesome art and click <a href=file:///Users/Jenny/GitHub/Multimedia/CanvasDragImages%20-%20Copy%202/index.html> here</a> to keep on creating!');
-		$('#container').appendTo('body');
     	$('#container').addClass('animate');
-		
+		setTimeout(function(){ 
+			$('#newButton').addClass('animateButton');
+			alert("WOW! You're such an artist. Right click to save the picture and click the blinking button to start over"); 
+		}, 3000);
+	});
+	
+	$("#new").click(function() {
+		stage.removeChildren();
+		$('#newButton').removeClass('animateButton');
 	});
 });
 
