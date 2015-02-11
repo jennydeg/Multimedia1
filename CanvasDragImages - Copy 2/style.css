@@ -50,9 +50,9 @@ img{
 	background: rgba(255, 59, 0, 0.89);
 	color: white;
 	border-radius: 15px;
-	width: 410px;
-	padding: 10px;
 	margin-top: 10px;
+	padding: 10px 10px 0px 10px;
+	height: 160px;
 }
 .hide{
 	display: none;
@@ -65,7 +65,7 @@ img{
 	float:left;
 }
 #moodform{
-	width: 200px;
+	width: 180px;
 }
 .mood{
 	display: none;
@@ -106,8 +106,8 @@ button:hover{
 }
 #new{
 	position: absolute;
-	top: 850px;
-	left: 555px
+	top: 870px;
+	left: 557px
 }
 .animate{
 	-webkit-animation: rotateIn 3s linear;

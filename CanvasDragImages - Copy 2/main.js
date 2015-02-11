@@ -66,7 +66,7 @@ $(document).ready(function() {
     	$('#container').addClass('animate');
 		setTimeout(function(){ 
 			$('#newButton').addClass('animateButton');
-			alert("WOW! You're such an artist. Right click to save the picture and click the blinking button to start over"); 
+			alert("WOW! You're such an artist. Right click to save the picture and click on the blinking button to start over."); 
 		}, 3000);
 	});
 	
