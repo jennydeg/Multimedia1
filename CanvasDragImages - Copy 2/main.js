@@ -72,6 +72,7 @@ $(document).ready(function() {
 	
 	$("#new").click(function() {
 		stage.removeChildren();
+		$('#container').removeClass('animate');
 		$('#newButton').removeClass('animateButton');
 	});
 });
