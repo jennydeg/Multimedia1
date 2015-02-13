@@ -4,7 +4,8 @@
 }
 #container{
 	width: 750px;
-	border: solid 4px #FF7F00;
+	border: solid 14px rgba(255, 59, 0, 0.89);
+
 }
 img{
     width: 100px;
@@ -84,7 +85,7 @@ img{
 	background: #bfbebc;
 }
 #infoimg:hover{
-	background: #FF7F00;
+	background: rgba(255, 59, 0, 0.89);
 }
 #ok{
 	margin-left: 310px;
@@ -101,13 +102,13 @@ button{
 	border: solid 1px #d1c8c8;
 }
 button:hover{
-	background: #FF7F00;
+	background: rgba(255, 59, 0, 0.89);
 	color: white;
 }
 #new{
 	position: absolute;
-	top: 870px;
-	left: 557px
+	top: 267px;
+	left: 580px;
 }
 .animate{
 	-webkit-animation: rotateIn 3s linear;
