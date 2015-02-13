@@ -97,7 +97,8 @@ img{
 }
 button{
 	background: white;
-	padding: 4px;
+	font-size: 16px;
+	padding: 8px;
 	cursor: pointer;
 	border: solid 1px #d1c8c8;
 }
@@ -107,8 +108,8 @@ button:hover{
 }
 #new{
 	position: absolute;
-	top: 267px;
-	left: 580px;
+	top: 285px;
+	left: 575px;
 }
 .animate{
 	-webkit-animation: rotateIn 3s linear;
